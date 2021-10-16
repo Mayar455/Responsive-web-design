@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+}
+
+a {
+  padding-top: 12px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: large;
+  display: block;
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: rgb(50, 165, 40);
+}
+.holder {
+  display: grid;
+}
+.hdr {
+  height: 100px;
+  width: 100%;
+}
+
+.one {
+  grid-column: 1/4;
+}
+.two {
+  grid-column: 4/10;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(101px, auto);
+}
+.cld {
+  padding: 17px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.three {
+  grid-column: 10/13;
+}
+
+.one div {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgb(59, 226, 226);
+}
+.two {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(101px, auto);
+  grid-gap: 35px;
+}
+.hdr h1 {
+  padding-top: 24px;
+  background: rgb(209, 15, 15);
+  text-align: center;
+  padding-bottom: 24px;
+}
+.cld1:hover,
+.cld2:hover,
+.cld3:hover,
+.cld4:hover,
+.cld5:hover,
+.cld6:hover {
+  background: rgb(37, 71, 133);
+}
+
+.two div {
+  background: rgb(245, 245, 245);
+  padding: 5px;
+  font-size: medium;
+  height: 200px;
+}
+.two div h1 {
+  background: lightgray;
+  display: inline-block;
+}
+
+.cldone {
+  grid-column: 1/7;
+}
+.cldtwo {
+  grid-column: 7/13;
+}
+.cldthree {
+  grid-column: 1/7;
+}
+.cldfour {
+  grid-column: 7/13;
+}
+.cldfive {
+  grid-column: 1/7;
+}
+.cldsix {
+  grid-column: 7/13;
+}
+
+.three a {
+  padding: 15px;
+  background: rgb(59, 226, 226);
+  color: black;
+}
+.ftr {
+  height: 100px;
+  margin-top: 25px;
+  background: rgb(209, 15, 15);
+  text-align: center;
+}
+/*medium aletler icin  */
+@media (max-width: 991px) {
+  .two {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 35px;
+  }
+  .cldone {
+    grid-column: 1/13;
+  }
+  .cldtwo {
+    grid-column: 1/13;
+  }
+  .cldthree {
+    grid-column: 1/13;
+  }
+  .cldfour {
+    grid-column: 1/13;
+  }
+  .cldfive {
+    grid-column: 1/13;
+  }
+  .cldsix {
+    grid-column: 1/13;
+  }
+}
+
+/* küçük aletler için  */
+
+@media (max-width: 767px) {
+  .parent {
+    display: grid;
+    grid-auto-rows: minmax(101px, auto);
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .one {
+    grid-column: 1/13;
+  }
+  .two {
+    grid-column: 1/13;
+  }
+  .three {
+    grid-column: 1/13;
+  }
+  .one div {
+    grid-column: 1/13;
+  }
+
+  .one div {
+    padding: 16px;
+    margin-bottom: 0px;
+    background: rgb(59, 226, 226);
+    text-align: center;
+  }
+
+  .three a {
+    padding: 16px;
+    background: rgb(59, 226, 226);
+    color: rgb(0, 0, 0);
+  }
+  .holder {
+    width: 100%;
+  }
+}
